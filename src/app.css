@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.light {
+    --primary-text: #121212;
+    --background: #FAFAFA;
+    --dp1: #FAFAFA;
+    --dp2: #FAFAFA;
+    --dp3: #FAFAFA;
+    --dp4: #FAFAFA;
+    --dp6: #FAFAFA;
+    --dp8: #FAFAFA;
+    --dp12: #FAFAFA;
+    --dp16: #FAFAFA;
+    --dp24: #FAFAFA;
+}
+
+.dark {
+    --primary-text: #FAFAFA;
+    --background: #121212;
+    --dp1: #1E1E1E; /*nav, sections bg*/
+    --dp2: #222222;
+    --dp3: #252525; /*img, text placeholder bg*/
+    --dp4: #272727;
+    --dp6: #2c2c2c; /*button, tag, link placeholder bg*/
+    --dp8: #2e2e2e;
+    --dp12: #333333;
+    --dp16: #353535;
+    --dp24: #383838;
+}
+
+body {
+    background-color: var(--background);
+
+    font-family: Roboto Mono, Arial, sans-serif;
+    color: var(--primary-text);
+}
+
+h1 {
+    font-size: 3.75rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+h4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
